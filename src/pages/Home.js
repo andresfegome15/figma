@@ -34,7 +34,9 @@ const Home = () => {
             <h1>Andrés González</h1>
             <h2>Developer fullstack</h2>
             <p>Programador junior, Trabajemos </p>
-            <a href='https://bespoke-paletas-48bb0c.netlify.app/'>Ver cv</a>
+            <a href='https://drive.google.com/file/d/1zGx2TP3rLhJUQfxr2KajNIoW-Dr4sAD1/view?usp=share_link'>
+              Ver cv
+            </a>
           </div>
 
           <div className='inicio-img'>
