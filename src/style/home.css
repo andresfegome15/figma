@@ -1,0 +1,160 @@
+:root{
+    --colorTexto: black;
+    --colorFondo: white;
+    --colorPurpure: #8c30f5c4;
+    --colorCian:#2EC5CE;
+    --sombra:rgba(0, 0, 0, 0.6);
+    --fondoBody:transparent;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+}
+.section-bienvenida{
+    width: 100%;
+    display: flex;
+    height: 73vh;
+    position: relative;
+    top: -30px;
+    background-color: var(--colorFondo);
+}
+
+.inicio-texto{
+    width: 50%;
+    text-align: right;
+    padding-top: 9%;
+    line-height: 2;
+    color: #2EC5CE;
+}
+
+.inicio-texto > h1{
+    font-size:60px;
+    margin: 0;
+}
+.inicio-texto > h2{
+    font-size: 40px;
+    display: inline;
+    width: 100%;
+    color: #8c30f5c4;
+}
+
+.inicio-texto>p{
+    font-size: 25px;
+    color: var(--colorTexto);
+    text-align: right;
+}
+.inicio-texto>a{
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    line-height: 4;
+    height: 60px;
+    display: inline-block;
+    background-color: var(--colorPurpure);
+    color: white;
+}
+
+.inicio-img{
+    width: 50%;
+    overflow:hidden;
+}
+
+.bienvenida-img{
+    transform: rotate3d(1,1,1, -10deg);
+    width: 400px;
+    height: 350px;
+    background-image: url('../img/prueba.png');
+    border: solid 10px var(--colorCian);
+    background-size: 80%;
+    background-position-x: center;
+    background-position-y: bottom;
+    position: relative;
+    top: -450px;
+    background-repeat: no-repeat;
+    left:100px  ;
+    z-index: 1;
+    transition: all 1s;
+}
+
+.bienvenida-img:hover{
+    transition: all 1s;
+    background-image: url('../img//prueba-hover.png');
+}
+
+.inicio-img > .circulo-purple{
+    width: 550px;
+    height: 550px;
+    background-color:var(--colorPurpure) ;
+    position: relative;
+    top: -130px;
+    right: -210px;
+    box-shadow: 2px 8px 8px var(--sombra);
+    border-radius: 1000px;
+}
+
+
+
+/* medidas para celulares */
+@media screen and (max-width:767px){
+    body{
+        /* background-color: var(--fondoBody); */
+    }
+    .section-bienvenida{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .inicio-texto{
+        width: 100%;
+        height: 50%;
+        z-index: 1;
+    }
+    .inicio-texto>h1{
+        font-size: 30px;
+        color: var(--colorCian);
+    }
+    .inicio-texto>h2{
+        font-size: 18px;
+        color: var(--colorPurpure);
+    }
+    .inicio-texto>p{
+        font-size: 12px;
+    }
+    .inicio-img{
+        width: 100%;
+        overflow: visible;
+        height: 50%;
+    }
+    .inicio-img > .circulo-purple{
+        width: 300px;
+        height: 300px;
+        left: -100px;
+        top: -200px;
+        z-index: 0;
+    }
+    .bienvenida-img{
+        width: 50%;
+        height: 100%;
+        position: relative;
+        top: -300px;
+        left: 0;
+        border: solid 5px var(--colorCian);
+        
+    }
+    }
+
+
+    @media screen and (min-width:767px) and (max-width:1023px){
+        .section-bienvenida{
+            height: 100vh;
+        }
+    }
