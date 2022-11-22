@@ -34,7 +34,7 @@ const Home = () => {
             <h1>Andrés González</h1>
             <h2>Developer fullstack</h2>
             <p>Programador junior, Trabajemos </p>
-            <a href='https://drive.google.com/file/d/1zGx2TP3rLhJUQfxr2KajNIoW-Dr4sAD1/view?usp=share_link'>
+            <a href='https://drive.google.com/file/d/1833U-qvxZhNnRg0EzaeM3JxsooOcZmMI/view?usp=sharing'>
               Ver cv
             </a>
           </div>
